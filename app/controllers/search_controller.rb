@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
 
   def index
-    @author = SearchFacade.author(params[:author])
+    @author = SearchFacade.find_author(params[:author])
     binding.pry
   end
 end
